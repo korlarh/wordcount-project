@@ -1,0 +1,13 @@
+<body bgcolor="darkgrey">
+<p bgcolor="pink">
+<h1>This is my First template Homepage</h1>
+<center><h1>WORD COUNT</h1></center><br>
+<form action="{%url 'count'%}">
+    <textarea name="fulltext" cols="40" rows="6"></textarea><br/><br>
+    <button type="submit" name="submit">Count!</button>
+</form>
+<br>
+<br>
+<a href="{% url 'about' %}">About Us.....</a>
+</p>
+</body>

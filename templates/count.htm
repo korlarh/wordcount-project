@@ -1,0 +1,17 @@
+<h1><center>COUNT THE WORDS</center></h1>
+<a href="{% url 'home' %}">Go Back<<<</a>
+<h3><strong>There are <font color="red">{{wc}} </font>words in the text.</strong></h3>
+
+Your Text:
+<strong><h2>{{ ft }}</h2></strong>
+
+<br>
+<br>
+<font size="5"><b>Word Count per Frequency: </b></font>
+<br>
+
+{% for key,value in sortedwords %}
+
+    {{ key }} = {{ value }};<br>
+
+{% endfor %}
